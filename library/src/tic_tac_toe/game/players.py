@@ -6,7 +6,7 @@ import random
 
 from tic_tac_toe.logic.models import Mark
 from tic_tac_toe.logic.exceptions import InvalidMove
-from tic_tac_toe.logic.models import GameState, Grid, Mark
+from tic_tac_toe.logic.models import GameState, Grid, Mark, Move
 
 class Player(metaclass = abc.ABCMeta):
     def __init__(self, mark: Mark) -> None:
