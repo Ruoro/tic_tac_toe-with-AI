@@ -72,9 +72,10 @@ class GameState:
             cell_index = index,
             before_state = self, 
             after_state= GameState(
-                Grid(self.grid.cells[index] +
-                self.current_mark +
-                self.grid.cells[index + 1:]
+                Grid(
+                    self.grid.cells[index] 
+                    + self.current_mark 
+                    + self.grid.cells[index + 1:]
                 ),
                 self.starting_mark,
             ),
